@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var choice = prompt("Welcome to perimeter calculator. \n Please enter your choice. \n1.perimeter of a rectangle. \n2.perimeter of a triangle. \n3.perimeter of a circle. \n4.perimeter of a paralellogram");
+        if (choice == '1') {
+            var l = prompt("Enter the length")
+            var b = prompt("Enter the breadth")
+            var result = 2 * (Number(l) + Number (b))
+            alert("The perimeter of the rectangle is " + result)
+        }
+        if (choice == '2') {
+            var a = prompt("Enter the 1st side")
+            var b = prompt("Enter the 2nd side")
+            var c = prompt("Enter the 3rd side")
+            var result = Number(a) + Number(b) + Number(c)
+            alert("The perimeter of the triangle is " + result)
+        }
+        if (choice == '3') {
+            var r = prompt("Enter the radius")
+            var result = 2 * 3.14 * Number(r)
+            alert ("The circumference of the circle is " + result)
+        }
+        if (choice == '4') {
+            var h = prompt("Enter the height")
+            var b = prompt("Enter the breadth")
+            var result = 2 * (Number(h) + Number (b))
+            alert("The perimeter of the paralellogram is " + result)
+        }
+    </script>
+</body>
+</html>
